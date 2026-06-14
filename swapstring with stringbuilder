@@ -1,0 +1,26 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+    public class SwapStringsUsingStringBuilder{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	   
+		String string1= "Hello";
+		String string2 = "World";
+		int firstLength = string1.length();
+		StringBuilder sb = new StringBuilder(string1);
+		sb.append(string2);
+		string1 = sb.substring(firstLength);
+		string2 =sb.substring(0,firstLength);
+		
+		System.out.println(string1);
+System.out.println(string2);
+}
+}
+
+	
+}
+s
