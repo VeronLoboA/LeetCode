@@ -1,0 +1,17 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef {
+    public static void main(String[] args){
+
+    String str="XYZ123";
+    String chars = str.replaceAll("[0-9]","");
+    String num=str.replaceAll("[A-Za-z]","");
+    
+    System.out.println("chaaracter:"+chars);
+    System.out.println("Num:"+num);
+    
+    }
+    
+}
