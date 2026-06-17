@@ -1,0 +1,31 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef {
+
+    // ✅ Method declared at class level, not inside main
+    public static boolean isLeapyear(int year) {
+        if (year % 4 == 0) {               // ✅ proper boolean check
+            if (year % 100 == 0) {         // ✅ proper boolean check
+                if (year % 400 == 0) {     // ✅ proper boolean check
+                    return true;
+                } else {
+                    return false;          // ✅ semicolon added
+                }
+            } else {
+                return true;
+            }
+        } else {
+            return false;                  // ✅ semicolon added
+        }
+    }
+
+    public static void main(String[] args) throws java.lang.Exception {
+        if (isLeapyear(2020)) {            // ✅ correct method name
+            System.out.println("Leap");
+        } else {
+            System.out.println("Not Leap");
+        }
+    }
+}
