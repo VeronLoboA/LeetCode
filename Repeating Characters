@@ -1,0 +1,21 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class RepeatingCharacters {
+    public static void main(String[] args){
+        String str = "Automation Test Engineer";
+        
+        Map<Character, Integer> charCountMap = new HashMap<>();
+        str = str.toLowerCase().replaceAll(" ","");
+        for(char c:str.toCharArray()){
+            charCountMap.put(c,charCountMap.getOrDefault(c,0)+1);
+        }
+        System.out.println("Repeating characters:");
+        for(Map.Entry<Character,Integer>entry:charCountMap.entrySet()){
+            if(entry.getValue()>1){
+                System.out.println(entry.getKey()+":"+ entry.getValue());
+            }
+        }
+    }
+}
