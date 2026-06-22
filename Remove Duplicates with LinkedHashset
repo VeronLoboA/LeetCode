@@ -1,0 +1,32 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class RemoveDuplicateChar
+{
+	
+	public static String removeDuplicates(String input){
+	    String lowercaseString = input.toLowerCase();
+	    char[] characters = lowercaseString.toCharArray();
+	    LinkedHashSet<Character> uniqueCharacters = new LinkedHashSet<>();
+	    
+	    for(char character:characters){
+	        if(!uniqueCharacters.contains(character)){
+	            uniqueCharacters.add(character);
+	        }
+	    }
+	    StringBuilder result = new StringBuilder();
+	    for(char character:uniqueCharacters){
+	        result.append(character);
+	        
+	    }
+	    return result.toString();
+	    
+	}
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	String input = "VeronLobo";
+	String result = removeDuplicates(input);
+	System.out.println(result);
+	}
+}
