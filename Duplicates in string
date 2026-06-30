@@ -1,0 +1,19 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		int[] arr={1,2,3,2,4,1};
+		
+		HashSet<Integer> set = new HashSet<>();
+		
+		for(int num:arr){
+		    if(!set.add(num))
+		    System.out.println(num);
+		    
+		}
+	}
+}
