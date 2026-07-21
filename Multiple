@@ -1,0 +1,25 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class mulitple
+{
+	public static void main (String[] args) 
+	{
+	  
+	  int result =mulitple(5,10);
+	  System.out.println(result);
+	}
+	  public static int mulitple(int i,int j){
+	      int k=1;
+	      int sum=0;
+	      while(k<=j){
+	          sum = sum+i;
+	          k++;
+	      }
+	      return sum;
+	  }
+	      
+	  
+	  
+	}
