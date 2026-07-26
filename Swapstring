@@ -1,0 +1,19 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Swapstring
+{
+   public static void main (String[] args) {
+        String a= "Veron";
+        String b="lobo";
+        String c;
+        c=a;
+        a=b;
+        b=c;
+        System.out.println(a);
+        System.out.println(b);
+    }
+	
+	}
+
