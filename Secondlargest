@@ -1,0 +1,22 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Secondlargest
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		int number[] ={100, 50, 90};
+	    int largest=Integer.MIN_VALUE;
+	    int second=Integer.MIN_VALUE;
+	    for(int num:number){
+	        if(num>largest){
+	            second=largest;
+	            largest=num;
+	        }else if(num>second && num!=largest){
+	            second=num;
+	        }
+	    }
+	    System.out.println(second);
+}
+}
