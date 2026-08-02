@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class ZerotoEnd
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		int number[] ={100, 50, 90,0,9,0,12,0,0,1200};
+		int nonzeronumber=0;
+		int temp;
+		for(int i=0;i<number.length;i++){
+		    if(number[i]!=0){
+		        temp=number[nonzeronumber];
+		        number[nonzeronumber]=number[i];
+		        number[i]=temp;
+		        nonzeronumber++;
+		    }
+		}
+		System.out.println(Arrays.toString(number));
+	    
+}
+}
