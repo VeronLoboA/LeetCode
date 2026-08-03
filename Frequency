@@ -1,0 +1,21 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Frequency
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		String str="madam";
+		HashMap<Character,Integer> map = new HashMap<Character,Integer>();
+		char input[]=str.toCharArray();
+		for(char Letter:input){
+		    map.put(Letter,map.getOrDefault(Letter,0)+1);
+		   
+		        
+		    }
+		    System.out.println(map);
+		
+		   
+}
+}
