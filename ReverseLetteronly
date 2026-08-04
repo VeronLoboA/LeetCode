@@ -1,0 +1,29 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class ReverseLetteronly
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		String str="123mad12";
+		char input[]=str.toCharArray();
+		int left =0;
+		int right = str.length()-1;
+		while (left < right) {
+		if(!Character.isLetter(input[left])){
+		    left++;
+		}else if(!Character.isLetter(input[right])){
+		    right--;
+		}else{
+		    char temp=input[right];
+		   input[right]=input[left];
+		    input[left]=temp;
+		    left++;
+		    right--;
+		}
+		}
+		     System.out.println(new String(input)); 
+		   
+}
+}
