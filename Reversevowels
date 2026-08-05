@@ -1,0 +1,31 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Reversevowels
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		String input="Hello";
+		String vowel="aeiouAEIOU";
+		char in[]=input.toCharArray();
+		int left =0;
+		int right=input.length()-1;
+		while(left<right){
+		    if(vowel.indexOf(in[left])==-1){
+		        left++;
+		    }else if(vowel.indexOf(in[right])==-1){
+		        right--;
+		    }else{
+		        char temp=in[right];
+		        in[right]=in[left];
+		        in[left]=temp;
+		        left++;
+		        right--;
+		    }
+		}
+		System.out.println(in);
+		
+
+	}
+}
