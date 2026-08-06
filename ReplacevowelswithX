@@ -1,0 +1,24 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class ReplacevowelswithX
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		String str="Name";
+		str= str.toLowerCase();
+		char inputstring[]=str.toCharArray();
+		StringBuilder sb = new StringBuilder();
+		for(char character:inputstring){
+		    if(character=='a'||character=='e'||character=='i'||character=='o'||character=='u'){
+		        sb.append('x');
+		    }else{
+		        sb.append(character);
+		    }
+		}
+		System.out.println(sb);
+	 
+		   
+}
+}
