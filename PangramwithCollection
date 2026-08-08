@@ -1,0 +1,25 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class PangramwithCollection
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		String input = "Pack my box with five dozen liquor jugs";
+        char pan[] = input.toLowerCase().toCharArray();
+        
+        HashSet<Character> mapset = new HashSet<>();
+        for(char character:pan){
+            if(Character.isLetter(character)){
+                mapset.add(character);
+            }
+        }
+        if(mapset.size()==26){
+            System.out.println("It is a pangram");
+        }else{
+            System.out.println("it is not");
+        }
+
+	}
+}
