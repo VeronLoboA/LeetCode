@@ -1,0 +1,36 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class ValidParanthesis
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	String input="())";
+	System.out.println(checkParanthesis(input));
+	}
+	public static boolean checkParanthesis(String input){
+	    char inputArray[]=input.toCharArray();
+	    Stack<Character> stack=new Stack<Character>();
+	    for(char c:inputArray){
+	        if(c=='('){
+	            stack.push(c);
+	        }else{
+	            if(c==')'){
+	                if(stack.isEmpty()){
+	                    return false;
+	                }else{
+	                    char topchar=stack.pop();
+	                    if(topchar!='('){
+	                        return false;
+	                    }
+	                }
+	            }
+	        }
+	    }
+	    	return stack.isEmpty();
+	}
+
+
+	
+}
