@@ -1,0 +1,31 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class RomanNumberToInteger
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    String input="VII";
+	    HashMap<Character,Integer> romanMap= new HashMap<Character,Integer>();
+	    romanMap.put('I',1);
+	    romanMap.put('V',5);
+	    romanMap.put('X',10);
+	    
+	    int result=0;
+	    int previousValur=0;
+	    
+	    for(int i=input.length()-1;i>=0;i--){
+	        char currentcharcter = input.charAt(i);
+	       int currentValue= romanMap.get(currentcharcter);
+	       if(currentValue>=previousValur){
+	           result=result+currentValue;
+	       }else{
+	           result=result-currentValue;
+	       }
+	       previousValur=currentValue;
+	    }
+	    
+	System.out.println(result);
+	}
+}
