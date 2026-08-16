@@ -1,0 +1,24 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class UniqueSubstring
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    String input="aabbccddaab";
+	    LinkedHashSet<Character> set =new LinkedHashSet<Character>();
+	    StringBuilder sb=new StringBuilder();
+	    char inputArray[]=input.toCharArray();
+	    for(char character:inputArray){
+	        if(set.add(character)){
+	            sb.append(character);
+	        }
+	    }
+	    System.out.println(sb);
+	
+	}
+
+
+	
+}
