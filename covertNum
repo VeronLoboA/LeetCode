@@ -1,0 +1,25 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class covertNum
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    String s="a1b3c4";
+	    convertNumtoChar(s);
+	}
+	
+	public static void convertNumtoChar(String s){
+	    for(int i=0;i<s.length();i++){
+	        if(Character.isLetter(s.charAt(i))){
+	            System.out.println(s.charAt(i));
+	        }else{
+	            int count =Character.getNumericValue(s.charAt(i));
+	            for(int j=1;j<count;j++){
+	                System.out.println(s.charAt(i-1));
+	            }
+	        }
+	    }
+	}
+}
