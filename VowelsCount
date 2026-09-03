@@ -1,0 +1,21 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class VowelsCount
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	String str="Veron";
+	int count =0;
+	for(char c:str.toLowerCase().toCharArray()){
+	    
+	if("aieuo".contains(c+"")){
+	        count++;
+	    }
+	}
+	System.out.println(count);
+	
+
+	}
+}
