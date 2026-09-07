@@ -1,0 +1,18 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Frequency
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	String input ="Rohit";
+	char c[]=input.toLowerCase().toCharArray();
+	HashMap<Character,Integer> map= new HashMap<Character,Integer>();
+	for(char inputs:c){
+	    map.put(inputs,map.getOrDefault(inputs,0)+1);
+	}
+	System.out.println(map);
+
+	}
+}
