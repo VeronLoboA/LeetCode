@@ -1,0 +1,24 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class SecondLargest
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		int[] arr ={1,2,2,2,3,4};
+		
+		int Largest =Integer.MIN_VALUE;
+		int Second = Integer.MIN_VALUE;
+		for(int num:arr){
+		    if(num>Largest){
+		        Second=Largest;
+		        Largest=num;
+		    }else if(num>Second&&num!=Largest)
+		    Second=num;
+		}
+		System.out.println(Largest);
+		System.out.println(Second);
+
+	}
+}
