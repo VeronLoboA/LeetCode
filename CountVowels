@@ -1,0 +1,19 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class CountVowels
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		String name ="Sandhiya";
+		int count=0;
+		for(char c:name.toLowerCase().toCharArray()){
+		    if("aeiou".contains(c+"")){
+		        count++;
+		    }
+		}
+		System.out.println(count);
+
+	}
+}
