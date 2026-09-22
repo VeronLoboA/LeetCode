@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Lastwordlength
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		String name="Sandhiya Vinayagamoorthy";
+		char s[]=name.toCharArray();
+		int count=0;
+		for(int i=s.length-1;i>=0;i--){
+		    if(s[i]!=' '){
+		        count++;
+		    }else{
+		        break;
+		    }
+		}
+		System.out.println(count);
+		
+		
+	}
+}
