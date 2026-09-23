@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class MoveZerotoEnd
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		int number[]={15,4,0,4,11,2,6};
+		int nonzeronumber=0;
+		int temp;
+		for(int i=0;i<number.length;i++){
+		    if(number[i]!=0){
+		        temp=number[nonzeronumber];
+		        number[nonzeronumber]= number[i];
+		        number[i]=temp;
+		        nonzeronumber++;
+		    }
+		}
+		System.out.println(Arrays.toString(number));
+
+	}
+}
