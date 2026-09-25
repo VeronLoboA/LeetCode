@@ -1,0 +1,26 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class PangramProgram
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		String input = "Pack my box with five dozen liquor jugs";
+        input = input.toLowerCase();
+		
+		boolean isPangram = true;
+		
+		for(int i='a';i<='z';i++){
+		    if(input.indexOf(i)<0){
+		        isPangram = false;
+		        break;
+		    }
+		}
+		if(isPangram){
+		    System.out.println("it is a prangram");
+		}else{
+		    System.out.println("It is not a pangram");
+		}
+	}
+}
