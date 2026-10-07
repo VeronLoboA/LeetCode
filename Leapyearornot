@@ -1,0 +1,29 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Leapyear {
+
+public static boolean isLeapyear(int year) {
+if (year % 4 == 0) {
+if (year % 100 == 0) {
+if (year % 400 == 0) {
+return true;
+} else {
+return false;
+}
+} else {
+return true;
+}
+}
+return false;
+}
+
+public static void main(String[] args) throws java.lang.Exception {
+if (isLeapyear(2027)) {
+System.out.println("Leap Year");
+} else {
+System.out.println("Is not a Leap Year");
+}
+}
+}
